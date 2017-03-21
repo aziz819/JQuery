@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JsTest</title>
+        <script
+              src="https://code.jquery.com/jquery-3.2.0.js"
+              integrity="sha256-wPFJNIFlVY49B+CuAIrDr932XSb6Jk3J1M22M3E2ylQ="
+              crossorigin="anonymous">
+        </script>
+        <style type="text/css">
+            .one{
+                background: yellow;
+                width: 300px;
+                height: 250px;
+                margin-left: 350px;
+            }
+            .two{
+            }
+        </style>
+        
+        <script>
+            $(function(){
+                $('#one1').click(function(){
+                    $('.one').css('background','blue');
+                    $('#text').text("this color changed to blue now");
+                });
+                $('#two1').click(function(){
+                    $('.one').css('background','green');
+                    $('#text').text("this color changed to green now");
+                });
+                $('#three1').click(function(){
+                    $('.one').css('background','red');
+                    $('#text').text("this color changed to red now");
+                });
+            });
+        </script>
+    </head>
+    <body>
+       <div class="one">
+           <div class="two">
+               <p><input type="button" name="1"  id="one1" value="blue"><input type="button" name="2" id="two1" value="green"><input type="button" name="2" id="three1" value="red">
+           </p>
+               <p id="text">this color's yellow now.</p>
+           </div>
+        </div>
+    </body>
+</html>
